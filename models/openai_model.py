@@ -14,5 +14,4 @@ def chatgpt_response(prompt: str) -> str:
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7
     )
-
     return response.choices[0].message.content
